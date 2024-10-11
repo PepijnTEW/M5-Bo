@@ -1,0 +1,83 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Afacad Flux", sans-serif;
+}
+.nav{
+    background: #4E31AA;
+    width: 100vw;
+    height: 7rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+#logo{
+    display: flex;
+    height: 100%;
+    color: #F7F7F8;
+    align-items: center;
+    gap: 1rem;
+}
+#logo > h3 {
+    font-size: 4rem;
+}
+#logo > img{
+    height: 6rem;
+    padding: .25rem;
+}
+#nav_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_button{
+    background: #4E31AA;
+    border-style: none;
+    height: 7rem;
+    width: 15rem;
+    transition: background .5s;
+    color: #F7F7F8;
+    font-size: 2.5rem;
+    cursor: pointer;
+    font-family: "Afacad Flux", sans-serif;
+}
+.nav_button:hover{
+    background: #3795BD;
+}
+#login{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#nav_login{
+    background: #3795BD;
+    border-style: none;
+    height: 7rem;
+    width: 15rem;
+    transition: background .5s;
+    color: #F7F7F8;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#nav_login:hover{
+    background: #4E31AA;
+}
+footer{
+    width: 100vw;
+    height: 10.5rem;
+    background-color: #3A1078;
+    color: #F7F7F8;
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.footer_Collum{
+    display: flex;
+    justify-content: center;
+}
