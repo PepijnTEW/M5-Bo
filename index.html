@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="menu.js" defer></script>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,21 +17,21 @@
                 <img src="img/logocogwheel.png" alt="">
                 <h3>Unity</h3>
             </div>
-            <ul id="nav_list">
-                <li><form  action="https://google.com">
-                    <input class="nav_button" type="submit" value="link 1" />
-                </form></li>
-                <li><form  action="https://google.com">
-                    <input class="nav_button" type="submit" value="link 2" />
-                </form></li>
-                <li><form  action="https://google.com">
-                    <input class="nav_button" type="submit" value="link 3" />
-                </form></li>
-            </ul>
-            <div id="login">
-                <form  action="https://google.com">
-                    <input id="nav_login" type="submit" value="login" />
-                </form>
+            <div id="menu_container">
+                <div id="button" class="button_menu"><p>=</p></div>
+                <div id="menu">
+                    <ul id="menu_list">
+                        <li><form  action="https://google.com">
+                            <input class="list_button" type="submit" value="link 1" />
+                        </form></li>
+                        <li><form  action="https://google.com">
+                            <input class="list_button" type="submit" value="link 2" />
+                        </form></li>
+                        <li><form  action="https://google.com">
+                            <input class="list_button" type="submit" value="link 3" />
+                        </form></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -45,7 +46,7 @@
         </div>
         <div class="footer_Collum">
             <p>
-                locatie
+                Adres: laanvanstraat 123 <br>
             </p>
         </div>
     </footer>

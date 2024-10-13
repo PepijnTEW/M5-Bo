@@ -16,7 +16,7 @@ body{
     width: 100vw;
     height: 7rem;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 #logo{
     display: flex;
@@ -24,6 +24,7 @@ body{
     color: #F7F7F8;
     align-items: center;
     gap: 1rem;
+    margin-left: 1rem;
 }
 #logo > h3 {
     font-size: 4rem;
@@ -37,7 +38,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.nav_button{
+.list_button{
     background: #4E31AA;
     border-style: none;
     height: 7rem;
@@ -48,22 +49,30 @@ body{
     cursor: pointer;
     font-family: "Afacad Flux", sans-serif;
 }
-.nav_button:hover{
-    background: #3795BD;
-}
-#login{
+
+#menu_container{
     display: flex;
     flex-direction: row-reverse;
 }
-#nav_login{
-    background: #3795BD;
+.button_menu{
+    background: #4E31AA;
     border-style: none;
     height: 7rem;
-    width: 15rem;
+    width: 7rem;
     transition: background .5s;
     color: #F7F7F8;
     font-size: 2rem;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+}
+#menu_list{
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    display: none;
 }
 #nav_login:hover{
     background: #4E31AA;
