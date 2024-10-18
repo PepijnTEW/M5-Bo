@@ -12,7 +12,7 @@ body{
     font-family: "Afacad Flux", sans-serif;
 }
 .nav{
-    background: #4E31AA;
+    background: #000000;
     width: 100vw;
     height: 7rem;
     display: grid;
@@ -21,10 +21,10 @@ body{
 #logo{
     display: flex;
     height: 100%;
-    color: #F7F7F8;
+    color: #ffffff;
     align-items: center;
     gap: 1rem;
-    margin-left: 1rem;
+    margin-left: 30rem;
 }
 #logo > h3 {
     font-size: 4rem;
@@ -39,7 +39,7 @@ body{
     align-items: center;
 }
 .list_button{
-    background: #4E31AA;
+    background: #000000;
     border-style: none;
     height: 7rem;
     width: 15rem;
@@ -49,39 +49,27 @@ body{
     cursor: pointer;
     font-family: "Afacad Flux", sans-serif;
 }
-
+.list_button:hover{
+    background: #ffffff;
+    color: #000000;
+}
 #menu_container{
     display: flex;
     flex-direction: row-reverse;
 }
-.button_menu{
-    background: #4E31AA;
-    border-style: none;
-    height: 7rem;
-    width: 7rem;
-    transition: background .5s;
-    color: #F7F7F8;
-    font-size: 2rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 6rem;
+#menu{
+    margin-right: 35rem;
 }
 #menu_list{
-    position: absolute;
-    top: 7rem;
-    right: 0;
-    display: none;
+    height: 7rem;
+    display: flex;
 }
-#nav_login:hover{
-    background: #4E31AA;
-}
+
 footer{
     width: 100vw;
     height: 10.5rem;
-    background-color: #3A1078;
-    color: #F7F7F8;
+    background-color: #000000;
+    color: #ffffff;
     font-size: 1.6rem;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -89,4 +77,39 @@ footer{
 .footer_Collum{
     display: flex;
     justify-content: center;
+}
+.main_img{
+    background: url(img/background.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: auto;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+.main_img > h1 {
+    font-size: 500%;
+    position: relative;
+    top: 7rem;
+}
+.main_button{
+    background: #ffffff;
+    border-style: none;
+    height: 6rem;
+    width: 15rem;
+    transition: background .5s;
+    color: #000000;
+    font-size: 2.5rem;
+    cursor: pointer;
+    font-family: "Afacad Flux", sans-serif;
+    position: relative;
+    top: 7.5rem;
+}
+.main_button:hover{
+    background: #000000;
+    color: #ffffff;
+}
+.info{
+    height: 90vh;
+    background: rebeccapurple;
 }
