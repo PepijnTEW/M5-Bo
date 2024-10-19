@@ -1,0 +1,194 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Afacad Flux", sans-serif;
+}
+#nav {
+    background: #000000;
+    width: 100vw;
+    height: 7rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+#logo {
+    display: flex;
+    height: 100%;
+    color: #ffffff;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 30rem;
+}
+#logo > h3 {
+    font-size: 4rem;
+}
+#logo > img{
+    height: 6rem;
+    padding: .25rem;
+}
+#nav_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list_button {
+    background: #000000;
+    border-style: none;
+    height: 7rem;
+    width: 15rem;
+    transition: background .5s;
+    color: #F7F7F8;
+    font-size: 2.5rem;
+    cursor: pointer;
+    font-family: "Afacad Flux", sans-serif;
+}
+.list_button:hover {
+    background: #ffffff;
+    color: #000000;
+}
+#menu_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+#menu {
+    margin-right: 28rem;
+}
+#menu_list {
+    height: 7rem;
+    display: flex;
+}
+#img_button {
+    height: 5rem;
+    width: 5rem;
+    margin-right: 3rem;
+    object-fit: contain;
+}
+footer {
+    width: 100vw;
+    height: 10.5rem;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.footer_Collum {
+    display: flex;
+    justify-content: center;
+}
+#main_img {
+    background: url(../img/background.webp);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: auto;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+
+}
+#main_img > h1 {
+    font-size: 500%;
+    position: relative;
+    top: 7rem;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#main_button {
+    background: #000000;
+    border-style: none;
+    height: 6rem;
+    width: 17rem;
+    transition: background .5s;
+    color: #ffffff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    font-family: "Afacad Flux", sans-serif;
+    position: relative;
+    top: 7.5rem;
+    border-radius: 5rem;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#main_button:hover {
+    background: #ffffff;
+    color: #000000;
+}
+#info {
+    height: 90vh;
+    background: rgb(219, 219, 219);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    font-size: 2rem;
+}
+#events{
+    height: 90vh;
+    background: #dbdbdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.event_collums{
+
+    margin: 3rem;
+    padding: 3rem;
+    background: #ffffff;
+    border-radius: 5rem;
+}
+.info_collums {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    padding: 3rem;
+    background: #ffffff;
+    border-radius: 5rem;
+}
+.info_collums > img {
+    padding: 3.5rem;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide-in-from-right {
+    animation: .75s ease-out 0s 1 slideInFromRight forwards;
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .slide-in-from-left {
+    animation: .75s ease-out 0s 1 slideInFromLeft forwards;
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }

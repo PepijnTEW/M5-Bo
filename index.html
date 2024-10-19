@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <script src="menu.js" defer></script> -->
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>SVunity</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <script src="scripts/slideLeft.js" defer></script>
+    <script src="scripts/slideRight.js" defer></script>
+
 </head>
 <body>
     <header>
-        <div class="nav">
+        <div id="nav">
             <div id="logo">
-                <img src="img/logocogwheel.png" alt="">
+                <img src="img/logocogwheel.webp" alt="">
                 <h3>Unity</h3>
             </div>
             <div id="menu_container">
+                <form action="index.html">
+                    <input id="img_button" type="image" src="img/home.png">
+                </form>
                 <div id="menu">
                     <ul id="menu_list">
-                        <li><form  action="https://google.com">
-                            <input class="list_button" type="submit" value="link 1" />
+                        <li><form  action="events.html">
+                            <input class="list_button" type="submit" value="Events" />
                         </form></li>
-                        <li><form  action="https://google.com">
-                            <input class="list_button" type="submit" value="link 2" />
-                        </form></li>
-                        <li><form  action="https://google.com">
-                            <input class="list_button" type="submit" value="link 3" />
+                        <li><form  action="login.html">
+                            <input class="list_button" type="submit" value="Login" />
                         </form></li>
                     </ul>
                 </div>
@@ -35,14 +37,33 @@
         </div>
     </header>
     <section>
-        <div class="main_img">
+        <div id="main_img">
             <h1>Uniting Students Of Amsterdam</h1>
             <form  action="https://google.com">
-                <input class="main_button" type="submit" value="Sign Up Now" />
+                <input id="main_button" type="submit" value="Sign Up Now" />
             </form>
         </div>
-        <div class="info">
-            bla bal
+        <div id="info">
+            <div id="info_collum1" class="info_collums">
+                <h3>Who are We?</h3>
+                <img src="img/info1.webp" alt="">
+                <p>Welcome to Unity a Amsterdam Student Association for Mbo Students! We are a dynamic community of students from diverse backgrounds, 
+                    united by our passion for learning and engagement. Our association provides a platform for academic collaboration, 
+                    social activities, and personal growth. From workshops and networking events to cultural outings and volunteer opportunities, 
+                    we strive to enrich the student experience in Amsterdam. Join us to connect with like-minded peers, 
+                    develop your skills, and make the most of your time in this vibrant city!</p>
+            </div>
+            <div id="info_collum2" class="info_collums">
+                <h3>Events</h3>
+                <img src="img/info2.webp" alt="">
+                <p>We’re thrilled to announce a lineup of upcoming events designed to engage, inspire, 
+                    and connect our members. Join us for our monthly networking night, 
+                    where you can meet industry professionals and fellow students over refreshments. 
+                    Don’t miss our interactive workshops on topics like resume building and interview skills, 
+                    perfect for preparing you for the job market. Plus, 
+                    we’ll be hosting a cultural outing to explore the city’s rich history and vibrant arts scene. 
+                    Stay tuned for dates and details—let’s make the most of our time together in Amsterdam!</p>
+            </div>
         </div>
     </section>
     <footer>
@@ -53,7 +74,8 @@
         </div>
         <div class="footer_Collum">
             <p>
-                Adres: laanvanstraat 123 <br>
+                *Text on this website is not final*<br>
+                *Images on this website are not final*
             </p>
         </div>
     </footer>
